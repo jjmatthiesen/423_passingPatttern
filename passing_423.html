@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    </head>
+
+    <body>
+        <div class="page w-full xl:w-8/12 m-auto bg-white xl:mt-4 xl:mb-4">
+            <h2 class="pb-8 pt-24 sm:pt-32 xl:pt-40 text-4xl pr-6 pl-6 sm:pl-6 sm:pr-6 md:pl-40 md:pr-40">Happy 423 Day: 423-like passing pattern</h2>
+            <!-- <h4 class="text-xl"> Jennifer Matthiesen </h4> -->
+            <h4 class="text-xl pb-8 xl:pb-12"> April 2020 </h4>
+            <div class="pb-5 sm:pb-20 xl:pb-32">
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 md:pl-40 md:pr-40">
+                    <span class="font-bold">April 23<sup>rd</sup>: a jugglable date.</span>
+                    Juggling is fun, juggling with numbers: even more. The notation called siteswaps, describing juggling patterns as a sequence of number is well known among jugglers.
+                    In this notation, numbers representing the time interval of \(n\)  beats of an object staying in the air, before landing.
+                    Sequences of numbers are encounter in our daily life, and some of them are even jugglable.
+                    In this manner, the date of April 23<sup>rd</sup> notated in numbers (423) is a valid juggling pattern. It looks as follows:
+                </p>
+                <img  class="object-center animated-gif" src="images/423_200.gif">
+                <p>
+                </p>
+        
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-2 md:pl-40 md:pr-40">
+                    What if we do not want to juggle alone? 
+                    Can we take more than one juggler into consideration and transform this siteswap into a passing pattern? 
+                    Yes, we can! 
+                    However, we do not want to split this 3-object pattern among \(j\) jugglers, but rather maintain the 423-like feeling individually and combine this with passing. 
+                    Let us keep the 4-throw and the 2-throw for each juggler, but consider the 3-throw as a global throw.
+                    We consider 2 jugglers for this.
+                    We split the global 3-throw between the 2 jugglers, which makes it a 1.5-throw for each juggler. 
+                    Hence, juggler \(A\) will throw the sequence 4 2 1.5, where 1.5-throws are cross throws.
+                    To achieve this, we consider the global pattern 834, which will be split between the two jugglers.
+                    Juggler \(A\) will throw 843 and juggler \(B\) 384.
+                </p>
+                <img class="object-center h-40 pb-2" src="images/split_834.svg">
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-4 md:pl-40 md:pr-40">
+                    We can then divide the global pattern by 2 to transform it into the local patterns. This results in the sequence 4 2 1.5 for juggler \(A\) and 1.5 4 2 for juggler \(B\).
+                </p>
+                <div class="table pb-2 pt-2">
+                    <h5 class="text-xs w-full sm:text-sm pr-6 pl-6 sm:pr-6 sm:pr-6 md:pl-40 md:pr-40 leading-none"> <span class="font-bold">Table 1.</span> Local sequence representation.
+                        Note that the 1.5-thows from juggler \(A\) are thrown as cross-throws, while \(B\) throws the 1.5-throws straight.
+                    </h5>
+                    <div class="text-xs sm:text-sm"> 
+                        <table class="beats">
+                            <tr class="border-b border-t border-black">
+                                <td></td>
+                                <td colspan="6">
+                                    Beats
+                                </td>
+                            </tr>
+                            <tr class="border-b border-black">
+                                <td class="w-24"></td>
+                                <td class="w-8">1</td>
+                                <td class="w-8">1.5</td>
+                                <td class="w-8">2</td>
+                                <td class="w-8">2.5</td>
+                                <td class="w-8">3</td>
+                                <td class="w-8">3.5</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left border-r border-black">Juggler A</td>
+                                <td>\(4\)</td>
+                                <td></td>
+                                <td>\(2\)</td>
+                                <td></td>
+                                <td>\(1.5_\times\)</td>
+                                <td></td>
+                            </tr>
+                            <tr class="border-b border-black">
+                                <td class="text-left border-r border-black">Juggler B</td>
+                                <td></td>
+                                <td>\(1.5_{||}\)</td>
+                                <td></td>
+                                <td>\(4\)</td>
+                                <td></td>
+                                <td>\(2\)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-4 md:pl-40 md:pr-40">
+                    The ladder diagram looks then as follows:
+                </p>
+                <img class="ladder-834 object-center pr-6 pl-6 w-full pt-2 pb-2" src="images/ladder_834.svg">
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-2 md:pl-40 md:pr-40"> 
+                    An 8-throw will land on a juggler's hand after 8 beats, when we take the actions of both jugglers into account.
+                    However, considering just the actions of juggler \(A\), the object will land after 4 beats as shown in the local sequence representation above. 
+                    The mean of the pattern 834 equals 5, which will give us the number of objects needed for this pattern.
+                    Juggler \(A\) starts with 3 objects, while juggler B has 2.
+                    However, this pattern could also be juggled by just one person as shown in following animation: 
+                </p>
+                <img  class="object-center animated-gif2" src="images/834_color.gif">
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 md:pl-40 md:pr-40">
+                    The lowest throw (the 3-throw) is the equivalent to the pass-throw in a passing setup, while as equal-numbered throws (4- and 8-throws) would be self-throws of juggler \(A\) or juggler \(B\) respectivly.
+                    Note, that the W-shape like form of the pattern remains unchanged.
+                </p>
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-4 md:pl-40 md:pr-40">
+                    Taking a valid siteswap \(s\), we can tranfer it to a passing pattern, which persists its characteristics.
+                    This can be done by selecting \(n\) throws from \(s\) and split them amoung \(j\) jugglers. 
+                    The resulting pattern can be in turn considered for just one juggler, with an increased amount of juggled objects, but maintained characteristics from the original.  
+                </p>
+                <p class="pr-6 pl-6 sm:pl-6 sm:pr-6 pt-2 pb-4 md:pl-40 md:pr-40">
+                    Have fun trying out some transformations! ;)
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
